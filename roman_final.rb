@@ -8,12 +8,13 @@ def roman(num)
 
 	num = gets.chomp.to_i
 
-	if num == 1..3999
+	if num >= 1 && num <= 3999
 		
 		length = num.to_s.length
 		digits = num.to_s.split("")
 
 		case length
+			
 			when 4
 				num_thousands = digits[-4] + "000"
 				num_hundreds = digits[-3] + "00"
@@ -37,6 +38,7 @@ def roman(num)
 				num_hundreds = ""
 				num_tens = ""
 				num_ones = digits[-1]
+		
 		end
 
 		num_roman = romans.key(num_thousands).to_s + romans.key(num_hundreds).to_s + romans.key(num_tens).to_s + romans.key(num_ones).to_s
