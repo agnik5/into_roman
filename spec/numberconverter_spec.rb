@@ -1,21 +1,24 @@
 require './spec_helper'
 
-RSpec.describe NumberConverter do
+describe 'NumberConverter' do
 
+# before :each do
+	# @num = num
+# end
 
-before :each do
-	@num = num
+describe '.main' do
+	it "takes the users input, converts to integer and calls roman method" do
+	num.should be users_input
+	num.should_be_in_(1..3999)
 end
-
-describe "#main" do
-	it "takes the users input, converts to positive integer and calls roman method" do
-		
+	context "when not in 1..3999" do
+		it should respond 
 	end
 end
 
-describe "#roman" do
-	it 
+describe '.roman' do
+	it "takes a number and converts to roman numeral as string" do
+
 	end
 end
-
 end
